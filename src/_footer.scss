@@ -1,0 +1,72 @@
+.footer-wrapper {
+    margin: 6rem 0rem 0rem 0rem;
+    padding-top: 6rem;
+    display: flex;
+    background: "../Assets/footer-background.jpg";
+    margin-top: 10rem;
+  }
+  .footer-logo-container {
+    max-width: 110px;
+   
+  }
+  .footer-icons {
+    margin-top: 2.5rem;
+  }
+  .footer-icons svg {
+    font-size: 1.5rem;
+    margin-right: 1.25rem;
+    color: #585858;
+  }
+  .footer-section-one {
+    
+    margin-left: 2.4rem ;
+  }
+  .footerimage-container
+  {
+    overflow: hidden;
+    /* height: inherit; */
+    position: absolute;
+    width: 100%;
+    height: 60vh;
+    opacity: 30%;
+    z-index: -1;
+  }
+  .footer-icons .tweet:hover
+  {
+    fill: rgb(88, 186, 252);
+    cursor: pointer;
+  }
+  .footer-icons .linkedin:hover
+  {
+    fill: rgb(50, 158, 200);
+    cursor: pointer;
+  }
+  .footer-icons .youtube:hover
+  {
+    fill: red;
+    cursor: pointer;
+  }
+  .footer-icons .facebook:hover
+  {
+    fill: rgb(10, 10, 149);
+    cursor: pointer;
+  }
+  .footer-section-two {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .footer-section-columns {
+    display: flex;
+    flex-direction: column;
+    min-width: 190px;
+  }
+  .footer-section-columns span {
+    margin: 0.25rem 0rem;
+    font-weight: 600;
+    color: #4c4c4c;
+    cursor: pointer;
+        &:hover{
+          color: red;
+        }
+  }

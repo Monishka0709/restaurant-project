@@ -1,0 +1,163 @@
+@mixin navHover{
+    color: red;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 90px;
+    position: -webkit-sticky;
+  
+    
+    .nav-logo-container{
+      margin-top: 15px;
+      margin-left: 2rem;
+    }
+
+    #{&} .navbar-links-container Link, a {
+        margin-right: 4rem;
+        text-decoration: none;
+        color: black;
+        font-size: 1.1rem;
+        font-weight: 600;
+
+
+    
+        .navbar-cart-icon {
+          font-size: 1.15rem;
+        }
+      }
+    
+      
+    }
+    
+
+    .navbar-menu-container{
+        display: none;
+      
+        
+      }
+      .navbar-menu-container svg {
+        font-size: 1.5rem;
+        cursor: pointer;
+      }
+      
+      
+      .primary-button {
+        padding: 0.9rem 1.75rem;
+        background-color: white;
+        outline: none;
+        border: none;
+        border-radius: 5rem;
+        font-size: 1.1rem;
+        cursor: pointer;
+        font-weight: 600;
+        margin-right: 3rem;
+        transition: 0.2s;
+
+            &:hover {
+            background-color: rgb(234, 234, 234);
+          }
+        
+      }
+
+      .navbar-links-container a:hover {
+        // color: red;
+        // cursor: pointer;
+        // transition: 0.3s ease;
+        @include navHover;
+      }
+      .modal{
+        position: fixed;
+        z-index: 2; /* Sit on top */
+        padding-top: 100px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100vw; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        /* Fallback color */
+        display: flex;
+        justify-content: center;
+        
+        // inset: 0;
+        background-color: rgb(234, 234, 234,0.9);
+        // opacity: 30%;
+      }
+      .modal-bg{
+        display: flex;
+        flex-direction: column;
+        z-index: 3;
+        width: 50vw;
+        align-items: center;
+        justify-content: center;
+        height: 75vh;
+        border-radius: 30px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        background-color: rgb(228, 228, 228); 
+      }
+      .login
+      {
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+      }
+      .login input {
+        flex: 1;
+        margin: 1.2rem 0rem;
+        height: 100%;
+        border-radius: 10px;
+        border: none;
+        outline: none;
+        font-size: 1.3rem;
+        padding: 0.5rem 1rem;
+      }
+      .closeBtn {
+        position: relative;
+        cursor: pointer;
+        right: -19.5vw;
+        border: none;
+        background: none;
+        top: -5vh;
+      }
+      
+      .modal-1 {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+
+        #{&} h1{
+          padding-bottom: 1rem;
+        }
+      }
+      
+      .register {
+        text-decoration: underline;
+        color: purple;
+      }
+      #loginbtn {
+        flex: 1;
+        background-color: #fa7039;
+        outline: none;
+        border: none;
+        border-radius: 5rem;
+        // font-size: 1.1rem;
+        cursor: pointer;
+  
+        margin: 1.2rem 0rem;
+        height: 100%;
+        font-size: 1.3rem;
+        padding: 0.5rem 1rem;
+      }
+
+      .drawer-link{
+        display: flex;
+      }
+      
+    
